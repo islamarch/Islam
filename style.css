@@ -1,0 +1,76 @@
+/* تأثير الفتح التدريجي */
+body {
+    background-color: black;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        background-color: black;
+    }
+    to {
+        opacity: 1;
+        background-color: #222;
+    }
+}
+
+/* صندوق الحاسبة */
+.calculator-container {
+    background: rgba(255, 204, 0, 0.9);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(255, 204, 0, 0.8);
+    width: 350px;
+    border: 2px solid white;
+    transition: 0.5s;
+}
+
+.calculator-container:hover {
+    box-shadow: 0 0 40px rgba(255, 204, 0, 1);
+}
+
+/* العناوين */
+h1, h3 {
+    color: black;
+}
+
+/* إدخال البيانات */
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+/* الأزرار */
+button {
+    background: black;
+    color: yellow;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: white;
+    color: black;
+}
